@@ -102,11 +102,12 @@ h2 {
     margin-bottom: 2rem;
 }
 .first-section img, .second-section img, .third-section img, .images img {width: 100%;}
+.third-section > section {position: relative;}
 .third-section div {
     text-align: center;
     padding: 0 1rem;
-    margin-top: -8rem;
-    /* padding-bottom: 2rem; */
+    position: absolute;
+    bottom: 3rem;
 }
 .third-section h3 {
     font-family: 'Fraunces', serif;
@@ -116,4 +117,32 @@ h2 {
 .third-section p {
     font-family: 'Barlow', sans-serif;
     line-height: 1.5;
+}
+.fourth-section {
+    padding-top: 3rem;
+}
+.fourth-section > h4 {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 4rem;
+}
+.passport {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.passport img {
+    width: 4rem;
+    border-radius: 50%;
+}
+.fourth-section > section p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 1.75rem 1.5rem;
+}
+.fourth-section > section h4 {
+    font-family: 'Fraunces', serif;
 }
