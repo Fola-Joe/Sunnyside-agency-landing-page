@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, img {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {box-sizing: border-box;}
+body {min-height: 100vh;}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header {
+    background-image: url(images/mobile/image-header.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem 0 8rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem 5rem;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+.arrow-img {
+    display: flex;
+    justify-content: center;
+}
+main {width: 100%;}
+.first-section article, .second-section article, .fourth-section{
+    background-color: hsla(7, 99%, 70%, 0.1);
+    text-align: center;
+}
+.first-section article, .second-section article {
+    padding: 4rem 1.5rem;
+}
+h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+.first-section p, .second-section p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.first-section img, .second-section img, .third-section img, .images img {width: 100%;}
+.third-section div {
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: -8rem;
+    /* padding-bottom: 2rem; */
+}
+.third-section h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.third-section p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.5;
+}
