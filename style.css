@@ -207,3 +207,46 @@ footer .icons {
     justify-content: center;
     gap: 1.5rem;
 }
+
+@media screen and (max-width: 425px) {
+    header {position: relative;}
+    header ul {
+        font-family: 'Barlow', sans-serif;
+        position: absolute;
+        top: 8rem;
+        right: 100%;
+        left: -100%;
+        color: hsl(232, 10%, 55%);
+        background-color: white;
+        margin: 0 1.5rem;
+        padding: 2.5rem;
+        font-size: 1.2rem;
+    }
+    header ul.active {
+        left: 0;
+        right: 0;
+    }
+    header ul::before {
+		content: "";
+		position: absolute;
+		border-right: 1.1rem solid white;
+		border-top: 1.1rem solid transparent;
+		border-left: 1.1rem solid transparent;
+		border-bottom: 1.1rem solid white;
+		top: -2rem;
+		right: 0;
+	}
+    header li {
+        margin-bottom: 2rem;
+    }
+    header li:last-child {
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        margin: 0 20% 0;
+        background-color: hsl(51, 100%, 49%);
+        color: hsl(212, 27%, 19%);
+        padding: 1.1rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+    }
+}
