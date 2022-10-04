@@ -82,7 +82,8 @@ h1 {
 }
 main {width: 100%;}
 .first-section article, .second-section article, .fourth-section{
-    background-color: hsla(7, 99%, 70%, 0.1);
+    /* background-color: hsla(51, 100%, 49%, 0.05); */
+    background-color: hsla(7, 99%, 70%, 0.05);
     text-align: center;
 }
 .first-section article, .second-section article {
@@ -94,12 +95,21 @@ h2 {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    color: hsl(212, 27%, 19%);
 }
 .first-section p, .second-section p {
     font-family: 'Barlow', sans-serif;
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 2rem;
+    color: hsl(232, 10%, 55%);
+}
+
+.first-section h4, .second-section h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
 }
 .first-section img, .second-section img, .third-section img, .images img {width: 100%;}
 .third-section > section {position: relative;}
@@ -109,8 +119,11 @@ h2 {
     position: absolute;
     bottom: 3rem;
 }
+.graphic-design {color: hsl(167, 40%, 24%);}
+.photography {color:  hsl(198, 62%, 26%);}
 .third-section h3 {
     font-family: 'Fraunces', serif;
+    font-weight: 900;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -120,6 +133,7 @@ h2 {
 }
 .fourth-section {
     padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 .fourth-section > h4 {
     font-family: 'Fraunces', serif;
@@ -127,6 +141,7 @@ h2 {
     font-size: 1.1rem;
     letter-spacing: 0.2rem;
     margin-bottom: 4rem;
+    color: hsl(210, 4%, 67%);
 }
 .passport {
     display: flex;
@@ -141,8 +156,54 @@ h2 {
     font-family: 'Barlow', sans-serif;
     font-size: 1.1rem;
     line-height: 1.5;
-    margin: 0 1.75rem 1.5rem;
+    margin: 0 1.75rem 2rem;
+    color: hsl(213, 9%, 39%);
 }
 .fourth-section > section h4 {
     font-family: 'Fraunces', serif;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: hsl(212, 27%, 19%);
+}
+.fourth-section > section h5 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    color: hsl(210, 4%, 67%);
+}
+.fourth-section article {
+    margin-bottom: 4rem;
+}
+.fourth-section article:last-child {
+    margin-bottom: 0;
+}
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer {
+    width: 100%;
+    background-color: hsla(167, 85%, 37%, 0.55);
+    padding: 4rem 0 5rem;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.footer-logo img {
+    width: 12rem;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Barlow', sans-serif;
+    color: #2C7566;
+    margin-bottom: 4.5rem;
+    font-size: 1.1rem;
+}
+footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
