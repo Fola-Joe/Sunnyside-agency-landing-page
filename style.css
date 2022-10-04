@@ -60,7 +60,7 @@ header {
     padding: 2rem 0 8rem;
     text-align: center;
 }
-nav {
+.nav-img {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,6 @@ h1 {
 }
 main {width: 100%;}
 .first-section article, .second-section article, .fourth-section{
-    /* background-color: hsla(51, 100%, 49%, 0.05); */
     background-color: hsla(7, 99%, 70%, 0.05);
     text-align: center;
 }
@@ -104,7 +103,6 @@ h2 {
     margin-bottom: 2rem;
     color: hsl(232, 10%, 55%);
 }
-
 .first-section h4, .second-section h4 {
     font-family: 'Fraunces', serif;
     font-weight: 900;
@@ -171,12 +169,8 @@ h2 {
     font-size: 0.9rem;
     color: hsl(210, 4%, 67%);
 }
-.fourth-section article {
-    margin-bottom: 4rem;
-}
-.fourth-section article:last-child {
-    margin-bottom: 0;
-}
+.fourth-section article {margin-bottom: 4rem;}
+.fourth-section article:last-child {margin-bottom: 0;}
 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,9 +185,7 @@ footer {
     justify-content: center;
     margin-bottom: 2.5rem;
 }
-.footer-logo img {
-    width: 12rem;
-}
+.footer-logo img {width: 12rem;}
 footer ul {
     display: flex;
     justify-content: space-around;
@@ -236,9 +228,7 @@ footer .icons {
 		top: -2rem;
 		right: 0;
 	}
-    header li {
-        margin-bottom: 2rem;
-    }
+    header li {margin-bottom: 2rem;}
     header li:last-child {
         font-family: 'Fraunces', serif;
         text-transform: uppercase;
@@ -248,5 +238,85 @@ footer .icons {
         padding: 1.1rem;
         border-radius: 2rem;
         font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    header {
+        background-image: url(images/desktop/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {padding-bottom: 20rem;}
+    #hamburger {display: none;}
+    .nav-img {margin: 0;}
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2rem 8.5rem;
+    }
+    .header-logo {width: 10rem;}
+    nav ul {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        color: white;
+        opacity: 0.9;
+        font-size: 1.1rem;
+    }
+    nav > ul li:last-child {
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        background-color: white;
+        color: hsl(212, 27%, 19%);
+        padding: 1.1rem 1.7rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 5.5rem;
+        letter-spacing: 0.5rem;
+    }
+    .first-section, .second-section, .third-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+    .first-section picture {
+        order: 2;
+    }
+    .first-section article {
+        padding-left: 10rem;
+        padding-right: 5rem;
+        text-align: left;
+        padding-top: 25%;
+    }
+    .second-section article {
+        padding-left: 7.5rem;
+        padding-right: 7rem;
+        padding-top: 25%;
+        text-align: left;
+    }
+    h2{
+        font-size: 2.8rem;
+    }
+    .fourth-section > section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fourth-section article {
+        margin-bottom: 0;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
