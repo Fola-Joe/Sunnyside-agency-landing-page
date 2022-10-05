@@ -60,6 +60,9 @@ header {
     padding: 2rem 0 8rem;
     text-align: center;
 }
+li:hover {
+    cursor: pointer;
+}
 .nav-img {
     display: flex;
     justify-content: space-between;
@@ -188,7 +191,8 @@ footer {
 .footer-logo img {width: 12rem;}
 footer ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 4rem;
     font-family: 'Barlow', sans-serif;
     color: #2C7566;
     margin-bottom: 4.5rem;
@@ -199,6 +203,11 @@ footer .icons {
     justify-content: center;
     gap: 1.5rem;
 }
+footer > .icons img:hover {
+    cursor: pointer;
+    fill: #FFF !important;
+}
+footer li:hover {color: white;}
 
 @media screen and (max-width: 425px) {
     header {position: relative;}
@@ -279,6 +288,11 @@ footer .icons {
         border-radius: 2rem;
         font-size: 1rem;
     }
+    nav > ul li:last-child:hover {
+        cursor: pointer;
+        color: white;
+        background-color: hsla(0, 0%, 100%, 0.3);
+    }
     h1 {
         font-size: 4rem;
         margin-bottom: 5.5rem;
@@ -289,9 +303,7 @@ footer .icons {
         grid-template-columns: 1fr 1fr;
         align-items: stretch;
     }
-    .first-section picture {
-        order: 2;
-    }
+    .first-section picture {order: 2;}
     .first-section article {
         padding-left: 10rem;
         padding-right: 5rem;
@@ -304,17 +316,17 @@ footer .icons {
         padding-top: 25%;
         text-align: left;
     }
-    h2{
-        font-size: 2.8rem;
-    }
+    h2{font-size: 2.8rem;}
+    .fourth-section {padding: 9rem 6rem 8rem;}
+    .fourth-section > h4 {font-size: 1.5rem;}
     .fourth-section > section {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .fourth-section article {
-        margin-bottom: 0;
-    }
+    .fourth-section > section p {margin-bottom: 4rem;}
+    .fourth-section article {margin-bottom: 0;}
+    .passport {margin-bottom: 3rem;}
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
