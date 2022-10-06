@@ -110,6 +110,7 @@ h2 {
     text-transform: uppercase;
     color: hsl(212, 27%, 19%);
     position: relative;
+    display: inline-block;
 }
 .first-section h4::before, .second-section h4::before {
     content: '';
@@ -123,8 +124,14 @@ h2 {
 }
 .first-section h4::before {background-color: hsla(51, 100%, 49%, 0.3);}
 .second-section h4::before {background-color: hsla(7, 99%, 70%, 0.3);}
-.first-section h4:hover::before {background-color: hsl(51, 100%, 49%);}
-.second-section h4:hover::before {background-color: hsl(7, 99%, 70%);}
+.first-section h4:hover::before {
+    background-color: hsl(51, 100%, 49%);
+    transition: ease-in 0.3s;
+}
+.second-section h4:hover::before {
+    background-color: hsl(7, 99%, 70%);
+    transition: ease-in 0.3s;
+}
 .first-section h4:hover, .second-section h4:hover {cursor: pointer;}
 .first-section img, .second-section img, .third-section img, .images img {width: 100%;}
 .third-section > section {position: relative;}
@@ -226,7 +233,7 @@ footer li:hover {
     transition: ease-in 0.3s;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 545px) {
     header {position: relative;}
     header ul {
         font-family: 'Barlow', sans-serif;
@@ -265,6 +272,25 @@ footer li:hover {
         border-radius: 2rem;
         font-size: 1rem;
     }
+    header li:last-child:hover {
+        cursor: pointer;
+        color: hsl(51, 100%, 49%);
+        background-color: hsl(210, 4%, 67%);
+        transition: ease-in 0.3s;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {font-size: 2rem;}
+    footer ul {gap: 1.5rem;}
+    header li:last-child {margin: 0 10% 0;}
+}
+
+@media screen and (min-width: 426px) and (max-width: 545px) {
+    h1 {font-size: 3rem;}
+    .third-section h3 {font-size: 2.2rem;}
+    .third-section p {font-size: 1.25rem;}
+    .fourth-section > section {padding-left: 10%; padding-right: 10%;}
 }
 
 @media screen and (min-width: 426px) {
@@ -275,8 +301,8 @@ footer li:hover {
     }
 }
 
-@media screen and (min-width: 1024px) {
-    header {padding-bottom: 20rem;}
+@media screen and (min-width: 546px) {
+    header {padding-bottom: 20rem;} 
     #hamburger {display: none;}
     .nav-img {margin: 0;}
     nav {
@@ -291,10 +317,10 @@ footer li:hover {
         font-weight: 500;
         display: flex;
         align-items: center;
-        gap: 3rem;
+        gap: 3rem; 
         color: white;
         opacity: 0.9;
-        font-size: 1.1rem;
+        font-size: 1.1rem; 
     }
     nav > ul li:last-child {
         font-family: 'Fraunces', serif;
@@ -335,6 +361,10 @@ footer li:hover {
         text-align: left;
     }
     h2{font-size: 2.8rem;}
+    .photography, .graphic-design {
+        width: 50%;
+        left: 25%;
+    }
     .fourth-section {padding: 9rem 6rem 8rem;}
     .fourth-section > h4 {font-size: 1.5rem;}
     .fourth-section > section {
@@ -349,4 +379,44 @@ footer li:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+
+@media screen and (min-width: 546px) and (max-width: 825px) {
+    header {padding-bottom: 10rem;}
+    nav {margin: 0 2rem 4rem;}
+    .header-logo {width: 8.5rem;}
+    nav ul {
+        gap: 1.5rem;
+        font-size: 0.9rem;
+    }
+    nav > ul li:last-child {
+        padding: 0.7rem 1rem;
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.3rem;
+    }
+    .first-section article, .second-section article {padding: 12.5%;}
+    .first-section h2, .second-section h2 {font-size: 1.8rem;}
+    .first-section p, .second-section p {font-size: 0.85rem;}
+    .third-section div {bottom: 1.5rem; left: 18.5%;}
+    .third-section h3 {font-size: 1.5rem;}
+    .third-section p {font-size: 0.75rem;}
+    .fourth-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .fourth-section > section p {margin-left: 0.5rem; margin-right: 0.5rem;}
+}
+
+@media screen and (min-width: 826px) and (max-width: 1200px) {
+    header {padding-bottom: 8rem;}
+    h1 {margin-bottom: 1.5rem; font-size: 3rem;}
+    .first-section article, .second-section article {padding: 13.5% 15%;}
+    .first-section h2, .second-section h2 {font-size: 2.2rem;}
+    .first-section p, .second-section p {font-size: 1rem;}
+    .third-section div {width: 75%; left: 10%;}
 }
