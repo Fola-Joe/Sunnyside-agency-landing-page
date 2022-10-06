@@ -60,9 +60,7 @@ header {
     padding: 2rem 0 8rem;
     text-align: center;
 }
-li:hover {
-    cursor: pointer;
-}
+li:hover {cursor: pointer;}
 .nav-img {
     display: flex;
     justify-content: space-between;
@@ -111,7 +109,23 @@ h2 {
     font-weight: 900;
     text-transform: uppercase;
     color: hsl(212, 27%, 19%);
+    position: relative;
 }
+.first-section h4::before, .second-section h4::before {
+    content: '';
+    position: absolute;
+    bottom: -0.2rem;
+    left: -0.2rem;
+    width: 7.8rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+.first-section h4::before {background-color: hsla(51, 100%, 49%, 0.3);}
+.second-section h4::before {background-color: hsla(7, 99%, 70%, 0.3);}
+.first-section h4:hover::before {background-color: hsl(51, 100%, 49%);}
+.second-section h4:hover::before {background-color: hsl(7, 99%, 70%);}
+.first-section h4:hover, .second-section h4:hover {cursor: pointer;}
 .first-section img, .second-section img, .third-section img, .images img {width: 100%;}
 .third-section > section {position: relative;}
 .third-section div {
@@ -207,7 +221,10 @@ footer > .icons img:hover {
     cursor: pointer;
     fill: #FFF !important;
 }
-footer li:hover {color: white;}
+footer li:hover {
+    color: white;
+    transition: ease-in 0.3s;
+}
 
 @media screen and (max-width: 425px) {
     header {position: relative;}
@@ -292,6 +309,7 @@ footer li:hover {color: white;}
         cursor: pointer;
         color: white;
         background-color: hsla(0, 0%, 100%, 0.3);
+        transition: ease-in 0.3s;
     }
     h1 {
         font-size: 4rem;
